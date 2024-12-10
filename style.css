@@ -1,0 +1,609 @@
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 2px solid #666;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;  
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #f8f9fa;   
+}
+#header div img {
+    max-width: 150px;
+    margin-bottom: 5px;
+}
+.navbar{
+    display:flex;
+    justify-content: center;
+    gap:5px;
+    flex-wrap: wrap;
+}
+.navbar a {
+    text-decoration: none;
+    padding: 8px 12px;
+    color: #333;
+    font-size: 16px;
+    cursor:pointer;
+    transition:color 0.3s ease;  
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    gap: 10px; 
+}
+
+select {
+    padding: 5px;
+}
+
+#box #label2 h3 span{
+    color:#007BFF;
+}
+
+#box {
+    text-align: left;
+    margin: 0;
+    padding:20px;
+    background-color: #eee5e5;
+    gap:10px;
+    font-size:10px;
+}
+
+#box #label1 h4 {
+    color: #007BFF;
+    font-size: 15px;
+    background-color: white;
+    width:50%;
+    border-radius: 50px;
+    box-shadow:#ddd;
+    text-align: center;
+}
+
+#box #label2 h3 {
+    font-size: 50px; 
+
+}
+
+#box p {
+    font-size: 2em;
+    color: #666;
+}
+
+#hero2 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+    
+}
+.image-container{
+    width:100%;
+    height:0px;
+    background: none;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.tour-search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tour-search-container .form-group {
+    margin-bottom: 15px;
+}
+
+.tour-search-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.tour-search-container input, 
+.tour-search-container select, 
+.tour-search-container button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.action-buttons a {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1em;
+    font-weight: 200;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#destinations {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.destination_item h3 {
+    font-size: 35px;    
+}
+
+.destination_item a {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: white;
+    background:#007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size:15px;
+    display: inline-block;
+    text-align:center;
+    transition: background-color 0.3s ease;    
+}
+
+.destination_item p {
+    font-size: 1em;
+    color: #666;
+}
+
+#Parent1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
+    width:90%;
+    padding:10px;    
+}
+
+.child1 {
+  color: white;
+  width:100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center;
+   overflow:hidden;
+    flex: 1 1 calc(100% - 20px);
+    max-width:100%;
+    height:auto;
+    border:3px solid #ddd;
+}
+
+.child1:hover {
+    transform: scale(1.05);
+}
+.child1 div{
+    width:100%;
+    height:175px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.child1 #western_europe{
+    background-image: url('Images/westernEurope.jpg');  
+}
+.child1 #south_africa{
+    background-image: url('Images/southAfrica.jpg');  
+}
+.child1 #scandinavia{
+    background-image: url('Images/scandinavia.jpg'); 
+}
+.child1 #egypt{
+    background-image: url('Images/egypt.jpg');  
+}
+.child1 #asia{
+    background-image: url('Images/asia.jpg');  
+}
+.child1 #america{
+    background-image: url('Images/america.jpg');    
+}
+#page_hero{
+    text-align:center;
+    padding:10px;
+}
+#page_hero h1{
+    color:#007BFF;
+    font-size:35px;
+}
+
+#page {
+        margin-top:20px;
+        text-align:center;
+        width:100%;   
+        margin-bottom: 20px;   
+    }
+
+ .Tours, #Hotel_Rooms {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .Tours{
+        margin-bottom: 20px;
+    }
+    .Tours_item{
+        padding-bottom:0px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+        padding:20px;
+    }
+    .Tours_item h1, .details_room h3 {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .Parent_tour, .Rooms_List {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #Hotel_Rooms{
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #Hotel_Rooms h1{
+        text-align: center;
+        font-size: 35px;
+    }
+    .child_tour{
+        padding:10px;
+        height: auto;
+        justify-content: center;
+    }
+   
+    .child_tour, .details_room {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .Rooms_List div img{
+        margin-top: 30px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+    .Rooms_List div img:hover{
+        transform: scale(1.03);
+    }
+    .tour-image {
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        width: 100%;
+        border-radius: 10px;
+        color:#ddd;
+        font-weight: 900;
+        font-size: 20px;
+        cursor:pointer;
+        transition: transform 0.3s ease;
+        line-height: 50px;
+    }  
+    .tour-image:hover {
+        transform: scale(1.08);
+    }
+    .child_tour a, .details_room a {
+        text-decoration: none;
+        color: white;
+        background:#007BFF;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size:15px;
+        display: inline-block;
+        text-align:center;
+        transition: background-color 0.3s ease;
+        margin-bottom: 20px;
+    }
+    
+    .child_tour a:hover, .details_room a:hover, .destination_item a:hover {
+        background-color: #0056b3;
+        transform:scale(1.05);
+    }
+   
+    .Tours_item h1 span, #Hotel_Rooms h1 span{
+        color:#007BFF;
+    }
+    .copyright {
+        background: #f8f9fa;
+        background-color:#666;
+        margin-top:20px;
+        height:80px;
+    }
+    .Rooms_List div img{
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        width: 100%;
+        font-size: 15px;
+        cursor: pointer;
+        padding:10px;
+    }
+    .Rooms_List div img{
+        border-radius: 20px;
+    }
+    .Parent-copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .Parent-copyright ul {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .Parent-copyright ul li a {
+        text-decoration: none;
+        color: #007BFF;
+    }
+    
+    .Parent-copyright ul li a:hover {
+        text-decoration: underline;
+    }
+    .tour-image div{
+        width: 100%;      
+    }
+    .child_contact #text{
+        width:100%;
+        height:500px;
+        background-image: url('Images/Contact.jpg');
+        background-position: center;
+        padding:50px;
+    }
+    #text div{
+        color:#ddd;
+        text-align: center;
+       font-weight: 500;
+    }
+    #text div h1{
+        font-size: 40px;
+    }
+    .child_contact .phone, .email, .location{
+        margin-top: 30px;
+        width:100%;
+        height:60px;
+        gap:20px;
+        padding: 10px;
+    }
+    .phone h5, .email h5, .location h5{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+    .phone p, .email p, .location p{
+        text-align: center;
+    }
+    .info{
+        width:100%;
+        height:200px;
+        padding:8px;
+        color:black;
+        text-align: center;
+        font-size: 18px;
+        margin-top:10px;
+    }
+  
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+    header {            
+        flex-direction: row;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+        width:100%;       
+    }
+
+    .action-buttons {
+       justify-content: flex-end;     
+    }
+
+    #box h4, #box h3 {
+        font-size: 1.2em;
+    }
+
+    .child1 {
+        flex: 1 1 calc(50% - 20px);      
+    }
+    
+    .Parent_tour{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-evenly;
+    }
+    .child_tour{
+        flex: 0 1 calc(50% - 15px);
+        padding:20px; /* Two columns */
+    }
+    .child_tour a{
+        font-size:16px;
+        padding:12px 24px;
+    }
+    .tour-image {
+        height: 250px; /* Adjusted for larger screens */
+        width: 100%;
+    }
+    .Tours_item h1 {
+        font-size: 30px; /* Slightly smaller font for tablets */
+    }
+    #Hotel_Rooms {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly; /* Ensure proper spacing */
+        gap: 20px; /* Add spacing between items */
+        margin-top: 10px;
+    }
+    .Rooms_List {
+        flex: 1 1 calc(50% - 20px); /* Two items per row */
+        max-width: calc(50% - 20px); /* Limit width to 50% of container */       
+    }
+     #Hotel_Rooms h1{
+        width:100%;
+        height:auto;
+    }
+    .Rooms_List div img{
+        width:100%;
+        height:320px;
+    }  
+}
+
+@media only screen and (min-width: 1024px) {
+   
+    header {
+        flex-direction: row;       
+    }
+
+    nav {
+        display: flex;
+        justify-content:center;
+        flex-direction:row;       
+    }
+
+    .navbar {
+      justify-content: flex-start;
+      gap:20px;
+    }
+
+    .action-buttons {
+        justify-content: flex-end;       
+    }
+
+    #box #label h4{
+        width:144px;
+        text-align: justify;
+    }
+    .child1 {
+        flex: 1 1 calc(33.33% - 20px);     
+     }
+    
+     .copyright{
+        margin-top:70px;
+     }
+
+    .Parent_tour{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-self: center;
+        min-height: 100vh; 
+        padding:10px;    
+    }
+    .child_tour{
+        flex: 1 1 calc(33% - 20px); /* Three columns */     
+    }
+    .tour-image{
+        height: 300px; /* Larger image for laptops */
+        width: 100%;
+       font-size: 20px;
+    }
+    .Tours_item h1{
+        font-size: 40px; /* Increased font size for laptops */
+    }
+    .Rooms_List div img{
+        width:100%;
+        height:320px;
+    }
+    .child_tour a {
+      font-size:18px;
+      padding: 15px 20px;  
+      margin-top: 0;   
+    }
+    #Hotel_Rooms {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly; /* Ensure proper spacing */
+        gap: 20px; /* Add spacing between items */
+        margin-top: 10px;
+    }
+    .Rooms_List {
+        flex: 1 1 calc(50% - 20px); /* Two items per row */
+        max-width: calc(50% - 20px); /* Limit width to 50% of container */       
+    }
+     #Hotel_Rooms h1{
+        width:100%;
+        height:auto;
+    }
+    .Tours{
+        margin-top: 20px;
+    }
+    .child_contact #text{
+        padding:200px;
+        font-weight: 500;
+    }
+    #text div h1{
+        font-size: 50px;
+    }
+    .image-container{
+        width:50%;
+        justify-content:end;
+        height:auto;
+        border-radius: 20px;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('Images/hero-right.jpg');
+    }
+    #hero1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:0;
+        padding:20px;  
+        background-color: #eee5e5;
+    }
+    #box{
+        height:600px;
+        width:50%;
+        padding:20px;
+    }
+    #box #label2 h3{
+        font-size: 84px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #box #label2 h3 span{
+        color:#007BFF;
+    }
+    #box #label1 h4{
+        font-size: 20px;
+        margin-top: 20px;
+        padding:10px;
+    }   
+}
+
+
+

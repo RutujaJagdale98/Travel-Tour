@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 8px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.create-account {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #333;
+}
+
+.create-account a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+    .login-box {
+        width: 400px;
+        padding: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .input-group input {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .login-button {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .forgot-password,
+    .create-account {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .login-box {
+        width: 400px;
+        padding: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .input-group input {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .login-button {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .forgot-password,
+    .create-account {
+        font-size: 14px;
+    }
+
+}
